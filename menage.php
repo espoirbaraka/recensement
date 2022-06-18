@@ -17,6 +17,9 @@ include("includes/footer.php");
 
 include("includes/script.php");
 
+include("getrow/menage.php");
+
+include("modal/menage.php");
 ?>
 
 
