@@ -1,5 +1,5 @@
 <?php
-include("includes/sessionconnected.php");
+include("includes/session_superadmin_connected.php");
 
 include("includes/head.php");
 

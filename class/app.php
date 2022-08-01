@@ -7,7 +7,7 @@ class App
   
  
 
-    public function __construct( $db_name = "prototype", $db_user = "root", $db_pass = "", $db_host = 'localhost' )
+    public function __construct( $db_name = "new_congopedia", $db_user = "root", $db_pass = "", $db_host = 'localhost' )
     {
         $this->db_name = $db_name;
         $this->db_user = $db_user;
@@ -96,6 +96,6 @@ class App
 
  }
 
- $app=new App('prototype');
+ $app=new App('new_congopedia');
  
  ?>

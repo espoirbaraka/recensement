@@ -7,16 +7,8 @@ include("includes/header.php");
 
 include("includes/aside.php");
 
-include("content/ville.php");
+include("content/home_superadmin.php");
 
-include("includes/footer.php");
 
-include("includes/script.php");
-
-include("getrow/ville.php");
-
-include("modal/ville.php");
 
 ?>
-
-

@@ -6,7 +6,7 @@ include("includes/head_login_register.php");
 <body class="hold-transition register-page">
 <div class="register-box">
   <div class="register-logo">
-    <a href="../../index2.html"><b>SOFT</b> Recensement</a>
+    <a href="../index.php"><b>CONGOPEDIA</b></a>
   </div>
 
   <div class="register-box-body">
@@ -14,11 +14,23 @@ include("includes/head_login_register.php");
 
     <form action="verify.php" method="post">
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" name="matricule" placeholder="Matricule">
+        <input type="text" class="form-control" name="nom" placeholder="Nom *" required>
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
+        <div class="form-group has-feedback">
+            <input type="text" class="form-control" name="postnom" placeholder="Postnom *" required>
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+            <input type="text" class="form-control" name="prenom" placeholder="Prenom">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+            <input type="email" class="form-control" name="mail" placeholder="Adresse mail *" required>
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
       <div class="form-group has-feedback">
-        <input type="password" name="password" class="form-control" placeholder="Mot de passe">
+        <input type="password" name="password" class="form-control" placeholder="Mot de passe *" required>
         <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
       </div>
       <div class="row">
@@ -27,7 +39,7 @@ include("includes/head_login_register.php");
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" name="creer" class="btn btn-primary btn-block btn-flat">Creer</button>
+          <button type="submit" name="creer" class="btn btn-primary btn-block btn-flat">Valider</button>
         </div>
         <!-- /.col -->
       </div>

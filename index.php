@@ -6,10 +6,10 @@ include("includes/head_login_register.php");
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>SOFT</b> Recensement</a>
+    <a href="../index.php"><b>CONGOPEDIA</b></a>
   </div>
   <div class="login-box-body">
-    <p class="login-box-msg">Connectez-vous à votre interface utilisateur</p>
+      <p class="login-box-msg">Connectez-vous</p>
     <?php
     if(isset($_SESSION['error'])){
 					echo "
@@ -21,7 +21,7 @@ include("includes/head_login_register.php");
 				?>
     <form action="verify.php" method="post">
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Matricule" name="matricule" autocomplete="off" required>
+        <input type="text" class="form-control" placeholder="Adresse mail" name="email" autocomplete="off" required>
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
@@ -38,20 +38,17 @@ include("includes/head_login_register.php");
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat" name="login">Connect</button>
+          <button type="submit" class="btn btn-primary btn-block btn-flat" name="login">Connection</button>
         </div>
         <!-- /.col -->
       </div>
     </form>
 
-    <div class="social-auth-links text-center">
-      <p>- OU -</p>
-      <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Connection avec Gmail</a>
-    </div>
+
     <!-- /.social-auth-links -->
 
-    <a href="#">Mot de passe oublié</a><br>
-    <a href="register.php" class="text-center">Créer un nouveau compte</a>
+<!--    <a href="#">Mot de passe oublié</a><br>-->
+    <a href="register.php" class="text-left">Créer un nouveau compte</a>
 
   </div>
   <!-- /.login-box-body -->
